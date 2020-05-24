@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title><%= title %></title>
+
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+</head>
+
+<body>
+    <nav class="navbar navbar-light bg-light">
+        <a class="navbar-brand" href="/">Welcome</a>
+        <ul class="nav nav-tabs">
+            <li class="nav-item">
+                <a class="nav-link" href="/">Home</a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link" href="/signup">Sign Up</a>
+            </li>
+        </ul>
+    </nav>
+
+    <div class="sign-form">
+        <form action="/login" method="post">
+            <h4>LOGIN FORM</h4>
+
+            <div class="container center">
+                <div class="form-group row">
+                    <label for="InputMail">Email Address</label>
+                    <div class="col-sm-10">
+                        <input type="text" name="email" id="InputMail" placeholder="Email" required>
+                    </div>
+                </div>
+                <div class="form-group row">
+                    <label for="InputPass">Password</label>
+                    <div class="col-sm-10">
+                        <input type="password" name="password" id="InputPass" placeholder="Password" required>
+                    </div>
+                </div>
+
+                <input type="submit" value="Login" class="btn btn-danger">
+        
+            </div>
+        </form>
+        <p>Are you new here? Simply <a href="/signup">SignUp</a></p>
+
+
+    </div>
+</body>
+</html>

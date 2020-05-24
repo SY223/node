@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title><%= title %></title>
+
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+</head>
+
+<body>
+    <nav class="navbar navbar-light bg-light">
+        <a class="navbar-brand" href="/">Welcome</a>
+        <ul class="nav nav-tabs">
+            <li class="nav-item">
+                <a class="nav-link" href="/">Home</a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link" href="/login">Login</a>
+            </li>
+        </ul>
+    </nav>
+
+    <div class="container">
+
+        <div class="sign-form">
+            <h4 class="">SIGN-UP FORM</h4>
+            <form action="/signup" method="post">
+                <div class="form-group">
+                    <label for="InputUser">Username</label>
+                    <input type="text" name="username" id="InputUser" placeholder="Username" required>
+                </div>
+                <div class="form-group">
+                    <label for="InputFname">First Name</label>
+                    <input type="text" name="firstname" id="InputFname" placeholder="First Name" required>
+                </div>
+                <div class="form-group">
+                    <label for="InputLname">Last Name</label>
+                    <input type="text" name="lastname" id="InputLname" placeholder="Last Name" required>
+                </div>
+
+                <div class="form-group">
+                    <label for="InputMail">Email Address</label>
+                    <input type="text" name="email" id="InputMail" placeholder="Email" required>
+                </div>
+
+                <div class="form-group">
+                    <label for="InputCity">City</label>
+                    <input type="text" name="City" id="InputCity" placeholder="City" required>
+                </div>
+
+                <div class="form-group">
+                    <label for="InputState">State</label>
+                    <input type="text" name="State" id="InputState" placeholder="State" required>
+                </div>
+
+                 <div class="form-group">
+                    <label for="InputPass">Password</label>
+                    <input type="password" name="password" id="InputPass" placeholder="Password" required>
+                </div>
+
+                <input type="submit" value="Register" class="btn btn-danger">
+            </form>
+
+            <p>Existing Users should Login <a href="/login">Here</a></p>
+
+            
+
+        </div>
+    </div>
+</body>
+</html>
